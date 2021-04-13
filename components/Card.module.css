@@ -1,8 +1,41 @@
+.card {
+  background-color: whitesmoke;
+  width: 200px;
+  height: 270px;
+  margin-bottom: 10px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  -webkit-box-shadow: 10px 17px 105px -49px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 17px 105px -49px rgba(0, 0, 0, 1);
+  box-shadow: 10px 17px 105px -49px rgba(0, 0, 0, 1);
 
-.card{
-    background-color: black;
-    width: 200px;
-    height: 200px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card {
+ 
+}
+
+.textDead{
+    color: red;
+}
+.textLive{
+    color: green;
+}
+
+.cardImage {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 80px;
+  margin-top: 5px;
+}
+
+.cardImage img {
+  width: 150px;
+  height: 150px;
 }
