@@ -35,7 +35,38 @@
   margin-top: 5px;
 }
 
+.link{
+
+}
+
+.link :visited{
+  color: aquamarine;
+}
+
 .cardImage img {
   width: 150px;
   height: 150px;
+}
+
+.buttonCard {
+  width: 100%;
+  margin-top:20px;
+}
+
+.buttonCard button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: #3BD1CE;
+  transition: 0.2s;
+  font-family: 'Roboto';
+}
+
+.buttonCard button:hover{
+  font-family: 'Roboto';
+  background-color: 'red';
+  background-color: #3bd1cf42;
+  cursor: pointer;
 }

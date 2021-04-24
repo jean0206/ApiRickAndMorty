@@ -1,19 +1,24 @@
 import React from "react";
 import Card from "../components/Card.js";
 import styles from "./Index.module.css";
+import {Link} from 'react-router-dom'
 
 const Index = ({ characters }) => {
   return (
     <div onClick={()=>console.log('Hola')} className={styles.index_container}>
+      <div className={styles.title_container}>
+
       Personajes Rick And Morty
+      </div>
       <div className={styles.characters_container}>
         {characters === null
-          ? "Not Found"
+          ? 'Not Found'
           : characters.map((character) => (
               <Card
                 image={character.image}
                 name={character.name}
                 status={character.status}
+                id={character.id}
                 key={character.id}
               ></Card>
             ))}
