@@ -1,4 +1,5 @@
 import styles from './Character.module.css'
+import CardInformation from '../../components/CardInformation'
 
 export default function Character({character}) {
 
@@ -6,13 +7,13 @@ export default function Character({character}) {
     <div className={styles.characterContainer}>
         <div className={styles.header}>
             <div className={styles.headerImage}>
-                <img src={'https://lh3.googleusercontent.com/proxy/vXU_nIpSeYZH4kUOnU5P7_UflP-fPJ0a_VF8EqBMn3L25NlLy1e1T1N3w3LnHIEtjKk-x5scFFx_uVxWT1debpawR3ZK8Y0zHcDgRW1xzIbg-60xoR5hlGmUjThLX4nxF1Hn2SaYN2PfdlSCgWQWJJoQEinI4Xw0cpk7wYfC4HAHucVTOTkot_ZnNzX-v4vD_sEGhf1byEjfQHP2HtBsEbs4HkOTiq1_o0m5'}></img>
+                <img src={'https://www.mor.bo/wp-content/uploads/2020/05/rm.png'}></img>
             </div>
             <div className={styles.headerImage}>
-                <img src={'https://lh3.googleusercontent.com/proxy/vXU_nIpSeYZH4kUOnU5P7_UflP-fPJ0a_VF8EqBMn3L25NlLy1e1T1N3w3LnHIEtjKk-x5scFFx_uVxWT1debpawR3ZK8Y0zHcDgRW1xzIbg-60xoR5hlGmUjThLX4nxF1Hn2SaYN2PfdlSCgWQWJJoQEinI4Xw0cpk7wYfC4HAHucVTOTkot_ZnNzX-v4vD_sEGhf1byEjfQHP2HtBsEbs4HkOTiq1_o0m5'}></img>
+                <img src={'https://www.mor.bo/wp-content/uploads/2020/05/rm.png'}></img>
             </div>
             <div className={styles.headerImage}>
-                <img src={'https://lh3.googleusercontent.com/proxy/vXU_nIpSeYZH4kUOnU5P7_UflP-fPJ0a_VF8EqBMn3L25NlLy1e1T1N3w3LnHIEtjKk-x5scFFx_uVxWT1debpawR3ZK8Y0zHcDgRW1xzIbg-60xoR5hlGmUjThLX4nxF1Hn2SaYN2PfdlSCgWQWJJoQEinI4Xw0cpk7wYfC4HAHucVTOTkot_ZnNzX-v4vD_sEGhf1byEjfQHP2HtBsEbs4HkOTiq1_o0m5'}></img>
+                <img src={'https://www.mor.bo/wp-content/uploads/2020/05/rm.png'}></img>
             </div>
         </div>
         <div className={styles.profilePhoto}>
@@ -21,7 +22,9 @@ export default function Character({character}) {
             <a>{character.location.name}</a>
         </div>
         <div className={styles.cardsInformation}>
-            
+            <CardInformation title="Gender" message={character.gender}/>
+            <CardInformation title="Type" message={character.type}/>
+            <CardInformation title="Status" message={character.status}/>
         </div>
     </div>
     );

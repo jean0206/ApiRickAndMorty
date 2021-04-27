@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/Card.js";
 import styles from "./Index.module.css";
-import {Link} from 'react-router-dom'
+
 
 const Index = ({ characters }) => {
   return (
